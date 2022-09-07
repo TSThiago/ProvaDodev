@@ -41,7 +41,11 @@ function RetornarTrueOuFalse(A, B) {
 
 // Ex 4
 
-console.log(OrdenarNúmeros(3,2,1))
+primeiroNumero = prompt("Insira um número")
+segundoNumero = prompt("Insira um número")
+terceiroNumero = prompt("Insira um número")
+
+console.log(OrdenarNúmeros(primeiroNumero,segundoNumero,terceiroNumero))
 
 function OrdenarNúmeros(a, b, c) {
     let numeroArray = [a, b, c]
@@ -63,7 +67,10 @@ function OrdenarNúmeros(a, b, c) {
 
 array = [4, 6, 7, 8, 9, 10, 12, 13, 14, 15]
 
-console.log(LimitarValores(9, 13))
+let LimiteInferior = parseInt(prompt("Insira um valor para o limite inferior"))
+let LimiteSuperior = parseInt(prompt("Insira um valor para o limite superior"))
+
+console.log(LimitarValores(LimiteInferior, LimiteSuperior))
 
 function LimitarValores(LimiteMenor, LimiteMaior) {
     let arrayAux = []
