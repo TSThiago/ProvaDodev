@@ -38,3 +38,42 @@ function RetornarTrueOuFalse(A,B){
         return false
     }
 }
+
+// Ex 4
+
+console.log(OrdenarNúmeros(3,2,1))
+
+function OrdenarNúmeros(a,b,c){
+    let numeroArray = [a,b,c]
+    let numeroAux = 0
+    
+    for(let index = 0; index < numeroArray.length; index++){
+        if(numeroArray[index] > numeroArray[index + 1]){
+            numeroAux = numeroArray[index]
+            numeroArray[index] = numeroArray[index + 1]
+            numeroArray[index + 1] = numeroAux
+            index = 0
+        }
+        console.log(index)
+    }
+    return numeroArray
+}
+
+// Ex 5 
+
+array = [4,6,7,8,9,10,12,13,14,15]
+
+console.log(LimitarValores(9,13))
+
+function LimitarValores(LimiteMenor,LimiteMaior){
+    let arrayAux = []
+    let contador = 0
+    
+    for(let index = 0; index < array.length; index++){
+        if(array[index] >= LimiteMenor && array[index] <= LimiteMaior){
+            arrayAux[contador] = array[index]
+            contador++
+        }
+    }
+    return arrayAux
+}
