@@ -23,3 +23,18 @@ function SomarAteNumero(numeroParametro){
     }
     return valor
 }
+
+// Ex 3:
+
+let valorA = prompt("Insira um valor para A")
+let valorB = prompt("Insira um valor para B")
+
+console.log(RetornarTrueOuFalse(valorA,valorB))
+
+function RetornarTrueOuFalse(A,B){
+    if(A % 2 == 0 && B > 5){
+        return true
+    }else{
+        return false
+    }
+}
